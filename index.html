@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <style>
+            body {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            div.container {
+                display: block;
+                max-width: 100% !important;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            .center {
+                text-align: center;
+            }
+            .left {
+                text-align: left !important;
+            }
+            .grid {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                -webkit-box-align: stretch;
+                -ms-flex-align: stretch;
+                align-items: stretch;
+                padding: 0em;
+                margin: -1rem;
+            }
+            .grid > .column:not(.row),
+            .grid > .row > .column {
+                position: relative;
+                display: inline-block;
+                width: 6.25%;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                vertical-align: top;
+            }
+            .grid > * {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .two.column.grid > .row > .column,
+            .two.column.grid > .column:not(.row){
+                width: 50%;
+            }
+            .column:not(.grid) {
+                margin-left: 12px;
+                margin-right: 12px;
+                border-top: solid;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="center header">
+                <img src="img/header/istm.png" alt="ISTM">
+            </div>
+            <hr class="center"/>
+            <div class="center header">
+                <img src="img/header/special.jpg" alt="Special of this e-Paper" style="width: 100%">
+                <p style="color: grey; font-size: 0.8em">Special of this e-Paper: Feng Chia University and other sister university. Photo by: Unknown.</p>
+            </div>
+            <div class="two column grid" style="margin-top: 10px">
+                <div class="column">
+                    <h2>國際學院招生捷報！  菁英薈萃，招生人數全壘打</h2>
+                    <img src="img/section/Section1.jpg">
+                    <p>
+                        逢甲大學國際學院選擇名列全球百大的國外名校作為合作夥伴，合設「2年逢甲+2年海外名校」的全新留學模式。無論是「美國普渡大學電機資訊工程雙學士學位學程」、「美國聖荷西州立大學商學大數據分析雙學士學位學程」或「澳洲墨爾本皇家理工大學商學與創新雙學士學位學程」，都吸引很多優質高三生報名。經過激烈的競爭後，目前國際學院招生人數全壘打，學生來自台灣優質高中及東南亞地區頂尖高中。<br>
+                        <a href="http://www.istm.fcu.edu.tw/CH/Events/Detail/26">更多內容</a>
+                    </p>
+                    </div>
+                </div>
+                <div class="column">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
